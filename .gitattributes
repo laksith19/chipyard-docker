@@ -1,0 +1,4 @@
+# Ensure shell script uses LF.
+Dockerfile  eol=lf
+*.yml       eol=lf
+*.sh        eol=lf
