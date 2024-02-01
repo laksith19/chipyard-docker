@@ -1,6 +1,6 @@
 services: 
   chipyard:
-    image: chipyard:cs152-sp24
+    build: .
     volumes:
       - data:/opt/chipyard
     tty: true
