@@ -8,13 +8,12 @@
 
 As of right now this is a custom image specifically tailored to fit the needs of the Spring 2024 offering of CS152. I might decide to support a more general build in the future. 
 
-These images have also only been tested on x86 machines, so if you've got an Apple Silicon Mac or another Arm based machine this image might not function correctly. 
-
 ## Pre-Requisites
 - Ensure that you have [Docker](https://docs.docker.com/get-docker/) installed on your machine.
 - Chipyard is massive, so make sure that you have at least 25GB of free space available on you system. 
 - Be connected to a decently stable internet connection, docker will need to pull a pretty large image (8GB) and it will take a really long time otherwise. 
     - You can take a look at the [instructions](#Building-Locally) to build locally if you'd rather start with a smaller download and let docker build out the image locally on your computer. 
+- If you're using an Arm based computer (Apple Silicon Macs / Raspberry pi etc...) please follow the [instructions](./arm-hosts.md) for Arm hosts before proceeding.
 
 ## Usage
 Clone this repo to your computer and navigate to it's root. You'll need to run these commands from inside the git repo for them to work correctly. 
@@ -55,5 +54,4 @@ $ mv docker-compose-local.yml docker-compose.yml
 ```
 
 You can follow the general [usage](#Usage) instructions after this, docker will build the image locally the very first time you start the container. 
-
 
