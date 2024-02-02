@@ -46,13 +46,14 @@ $ docker compose down
 
 
 ## Building Locally
-If you'd rather build the image locally, please keep in mind that it'll will take a decent amount of time to complete (took my computer 25mins) but it's only a one time thing. Also I've only tested the build on a Linux machine running docker, so if you're using docker in Windows or on a Mac you might run into some additional issue.  
+
+If you'd rather build the image locally, please keep in mind that it'll will take a decent amount of time to complete (took my computer 25mins) but it's only a one time thing. Also I've only tested the build on a Linux machine, so if you're using docker in Windows or on a Mac you might run into some additional issues.  
 
 All you need to do is replace the `docker-compose.yml` file with the alternate one provided `docker-compose-local.yml.` The easiest way to do this would be by running:
 ```bash 
 $ mv docker-compose-local.yml docker-compose.yml
 ```
 
-You can follow the general usage instructions after this, docker will build the image locally the very first time you start the container. 
+You can follow the general [usage](#Usage) instructions after this, docker will build the image locally the very first time you start the container. 
 
 
