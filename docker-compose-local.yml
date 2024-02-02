@@ -1,6 +1,7 @@
 services: 
   chipyard:
     build: .
+    platform: linux/amd64
     volumes:
       - data:/opt/chipyard
     tty: true

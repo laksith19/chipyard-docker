@@ -1,6 +1,7 @@
 services: 
   chipyard:
     image: laksith19/chipyard:cs152-sp24
+    platform: linux/amd64
     volumes:
       - data:/opt/chipyard
     tty: true
